@@ -1,5 +1,4 @@
 require_relative "app/services/scanner"
-require_relative "app/invaders/invader1"
 Dir[File.join(__dir__, "app", "invaders", "*.rb")].each { |file| require file }
 Dir[File.join(__dir__, "app", "radars", "*.rb")].each { |file| require file }
 Dir[File.join(__dir__, "app", "errors", "*.rb")].each { |file| require file }
