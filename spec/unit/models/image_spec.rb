@@ -23,7 +23,7 @@ describe "validations" do
     let(:raw_image_data) { [[true, false], [true, true]] }
 
     it "raises an error" do
-      expect { action }.not_to raise_error(Invaders::ImageError)
+      expect { action }.not_to raise_error
     end
   end
 end

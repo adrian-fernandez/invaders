@@ -31,14 +31,12 @@ describe "#call" do
   end
 
   context "with custom mapper" do
-    let!(:sample_mapper) do
-      class SampleMapper
-        OBJECT_CHAR = "1"
-        UNMATCHED_OBJECT_CHAR = "x"
-        BLANK_CHAR = "0"
-        UNMATCHED_BLANK_CHAR = "_"
-        LINEBREAK_CHAR = "\n"
-      end
+    class SampleMapper
+      OBJECT_CHAR = "1"
+      UNMATCHED_OBJECT_CHAR = "x"
+      BLANK_CHAR = "0"
+      UNMATCHED_BLANK_CHAR = "_"
+      LINEBREAK_CHAR = "\n"
     end
 
     let(:raw_image) do
